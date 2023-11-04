@@ -1,0 +1,45 @@
+// GradeCalculator in Java (Task2)
+
+import java.util.*;
+
+public class gradeCalc {
+   public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the no of subjects you are having ");
+        int n = sc.nextInt();
+        float sum=0 , i=1;
+        // for(int i=1; i<=n; i++) {
+        while(i<=n) {
+            System.out.println("Enter the marks of your each subject out of 100");
+            int marks = sc.nextInt();
+            if ( marks>100 || marks<0 ) {
+                System.out.println("Wrong input! ");                
+                continue;
+            }
+            sum=sum+marks;
+            i++;
+        } 
+        float avgMarks = sum/n;
+       
+        System.out.println("Your total marks are " + sum);
+        // System.out.println("Your average marks are " + avgMarks);
+        System.out.println("Your percentage is " + avgMarks + "%");
+        
+        if(avgMarks>89) {
+            System.out.println("A Grade");
+        }
+        else if(avgMarks>=75 && avgMarks<90) {
+            System.out.println("B Grade");
+        }
+        else if(avgMarks>=60 && avgMarks<75) {
+            System.out.println("C Grade");
+        }
+        else if(avgMarks>=45 && avgMarks<60) {
+            System.out.println("D Grade");
+        }
+        else {
+            System.out.println("E Grade");
+        }
+   }  
+}
