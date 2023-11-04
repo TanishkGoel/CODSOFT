@@ -1,2 +1,2 @@
 # CODSOFT
-It is a part of my successful Internship at Codsoft in Java Development.
+It is a part of my virtual Internship at Codsoft in Java Development.
